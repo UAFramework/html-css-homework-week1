@@ -24,9 +24,17 @@ html, body {
 nav {
     grid-column: -3 / -2;
     grid-row: 1 / 2;
-    display: flex;
-    justify-content: end;
     padding-top: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    color: black;
+    list-style-type: none;
 }
 
 #header-img {
@@ -137,4 +145,21 @@ article:first-child {
 
 .post-link:visited {
     color: rgb(161, 24, 0);
- }
+}
+
+footer {
+padding: 5px 0 5px 50px;
+background-color: rgb(216, 216, 216);
+}
+
+#footer-link:hover {
+color: black;
+}
+
+#footer-link:link {
+    color:darkblue;
+}
+
+#footer-link:link {
+    color:black;
+}
