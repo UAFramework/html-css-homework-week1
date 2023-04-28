@@ -11,42 +11,52 @@ html, body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 30px 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
     background-color: #FCD8A7;
 }
 
 #logo {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+#blog-name {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 nav {
-    grid-column: -3 / -2;
+    grid-column: -6 / -2;
     grid-row: 1 / 2;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
 }
 
-nav ul li {
+nav ul li a {
     color: black;
-    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 #header-img {
     grid-column: 8 / -2;
     grid-row: 2 / 4;
-    padding: 20px;
+    align-self: center;
 }
 
 h1 {
     grid-column: 3 / 8;
     grid-row: 2 / 3;
-    font-size: 40px;
+    font-size: 42px;
+    padding-top: 25px;
 }
 
 #header-paragraph {
@@ -163,3 +173,4 @@ color: black;
 #footer-link:link {
     color:black;
 }
+
