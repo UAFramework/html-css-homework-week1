@@ -1,8 +1,49 @@
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1, h2, h3{
+    font-family: 'Exo 2', sans-serif;
+    padding: 6px;
+    margin: 0;
+}
+h3{
+    text-align: center;
+}
+.Article{
+    background-color: beige;
+    width: auto;
+    height: auto;
+    margin-top: 4em;
+    margin-left: 0;
+    padding: 0;
+    border:  aqua 2px solid;
+}
+.Article:first-child{
+    background-color: beige;
+    width: 1850px;
+    height: auto;
+    margin-top: 4em;
+    margin-left: 0;
+    padding: 0;
+    border:  aqua 2px solid;
+    text-transform: uppercase;
+}
+.images{
+    display: flex;
+    width: 1800px;
+    height: 200px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+footer{
+    display: flex;
+    border-top: black 3px solid;
+    margin-top: 20px;
+    align-items: flex-start;
+}
