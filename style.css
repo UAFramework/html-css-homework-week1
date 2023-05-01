@@ -28,7 +28,7 @@ html, body {
 }
 
 nav {
-    grid-column: -6 / -2;
+    grid-column: -7 / -2;
     grid-row: 1 / 2;
     padding-top: 15px;
 }
@@ -117,17 +117,6 @@ h1 {
     font-size: 18px;
 }
 
-/*#travels-post {
-    padding: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-#travels-paragraph {
-    justify-self: flex-end;
-}*/
-
 #travels-post {
     padding: 10px;
     display: grid;
@@ -164,12 +153,12 @@ h1 {
 }
 
 footer {
-padding: 5px 0 5px 50px;
-background-color: rgb(216, 216, 216);
+    padding: 5px 0 5px 50px;
+    background-color: rgb(216, 216, 216);
 }
 
 #footer-link:hover {
-color: black;
+    color: black;
 }
 
 #footer-link:link {
@@ -180,3 +169,86 @@ color: black;
     color:black;
 }
 
+.responsive {
+    width: 100%;
+    max-width: 450px;
+    min-width: 350px;
+    height: 100%;
+    max-height: 300px;
+}
+
+@media all and (max-width: 950px) {
+    #header-name {
+        padding: 0 10% 20px 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #books-post {
+        padding: 0 10% 20px 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #basketball-post {
+        padding: 0 10% 20px 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #travels-post {
+        padding: 0 10% 20px 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        grid-column: 6 / -2;
+        grid-row: 1 / 2;
+        padding-top: 15px;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 650px) {
+    #logo {
+        padding: 0;
+        align-self: center;
+    }
+
+    #blog-name {
+        align-self: center;
+    }
+
+    nav {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    nav ul li {
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    #footer {
+        padding-left: 10px;
+    }
+}
