@@ -1,3 +1,89 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: [main-start] 1fr [content-start] 7fr [content-end main-end];
+  grid-template-rows: [main-start] 220px [content-start] auto [content-end] 100px [main-end];
+}
+
+.header {
+  text-align: center;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+  grid-column: main-start / main-end;
+}
+
+.content {
+  grid-column: content-start / content-end;
+}
+
+.sidebar {
+  grid-column: main-start / content-start;
+  grid-row: content-start / content-end;
+}
+.footer {
+  grid-column: main-start / main-end;
+  display: grid;
+  text-align: center;
+  background-color: #054468;
+  color: white;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: fit-content;
+  padding: 20px 0 20px 0;
+}
+h1 {
+  color: blue;
+  font-size: 80px;
+  margin: 0;
+  padding: 10 px;
+}
+#description {
+  color: rgb(237, 237, 51);
+  font-size: 20px;
+  margin: 0;
+  padding: 0px 50px 20px 50px;
+}
+
+.sidebartitle {
+  text-align: center;
+  color: #77aae1;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ‘Open Sans’, sans-serif;
+}
+
+.sidebar {
+  background: #054468;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+}
+.sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #10558d;
+  color: rgb(237, 237, 51);
+  font-size: 16px;
+}
+.sidebar ul li a .icon {
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+article > p:first-child {
+  color: rgb(5, 68, 104);
+  font-weight: bolder;
+}
 /**
  * Add your custom styles below
  * 
