@@ -6,3 +6,95 @@
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  */
+ html,
+ body {
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+ }
+
+ .header {
+   padding: 25px;
+    font-size: 30px;
+    text-align: justify;
+    background-color: rgb(144, 166, 106);
+ }
+
+ 
+ h1 {
+   font-style: oblique;
+   text-align: center;
+    margin: 10px;
+    padding: 12px;
+    height: 5px;
+}
+ 
+ h2, h3 {
+    text-align: center;
+    margin: 5px;
+    padding: 12px;
+    height: 5px;
+ }
+
+ p {
+    width: 100%;
+    max-width: 1300px;
+    margin: 10px;
+    padding: 12px;
+    height: 5px;
+    margin-left: 30px;
+    text-align: justify;
+   border: 10px;
+ }
+
+
+ .Article {
+    background-color: rgb(162, 162, 70);
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    border: 10px solid;
+ }
+
+ .Article:first-child {
+    background-color: beige;
+    width: 850px;
+    height: auto;
+    margin-top: 4px;
+    margin-left: 5px;
+    padding: 10px;
+    border: 10px solid;
+ }
+
+ img {
+    width: 650px;
+    height: 400px;
+    margin: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 7px solid while;
+ }
+
+ images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin: 10px;
+ }
+
+ footer {
+    display: flex;
+    border-top: rgb(1, 84, 1) 3px solid;
+    margin-top:20;
+    padding: 25px;
+    align-items: flex-start;
+ }
+
+ @media {
+    max-width: 500px;
+ }
